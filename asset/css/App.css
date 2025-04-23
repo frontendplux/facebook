@@ -1,0 +1,11 @@
+header a{font-size: small;margin: 10px;text-underline-offset: 5px;text-decoration: none;transition: 0.5s;}
+header a:hover{text-decoration:underline;color:brown}
+h2{font-size: x-large;color: rgba(0, 0, 0, 0.644); text-transform: capitalize;}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
