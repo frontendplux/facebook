@@ -1,102 +1,56 @@
 <!DOCTYPE html>
-<html lang="en" class="h-100">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="asset/plugins/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="asset/plugins/remixicon/remixicon.css">
-    <link rel="stylesheet" href="asset/css/App.css">
-    <link rel="icon" href="asset/img/logo.png">
-    <title>frontendplux - software developing company</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
-<body class="m-0 bg-light h-100">
-    <header class="bg-white p-2 sticky-top">
-        <div class="d-flex justify-content-between align-items-center container">
-            <div><img src="asset/img/logo.png" style="width: 40px;height:40px;" alt=""> </div>
-            <div>
-                <a href="homehtml">Home</a>
-                <a href="project.html">Our&nbsp;Project</a>
-                <a href="pluxcoin.html">pluxCoin</a>
-                <a href="about.html">About&nbsp;us</a>
-                <a href="contact.html">Contact&nbsp;us</a>
+<body class="bg-light d-flex justify-content-center align-items-center">
+    <div class="container d-md-flex gap-3">
+        <div class="d-none d-md-block col-md-6">
+            <h1 class="text-primary" style="font-size:60px;">facebook</h1>
+            <div class="text-secondary fs-3">Facebook helps you connect and share with the people in your life.</div>
+        </div>
+        <div class="col-md-6">
+            <div class="bg-white p-3 rounded" style="max-width: 390px;">
+                <div class="h1 p-2 d-md-none text-primary fw-bold text-capitalize mb-0">facebook</div>
+                <div class="text-secondary p-2 d-md-none">Facebook helps you connect and share with the people in your life.</div>
+                <div class="p-2"><input type="text" id="email" class="border w-100 p-3" placeholder="Enter Email Address or phone number"></div>
+                <div class="p-2"><input type="password" id="pass" placeholder="Password" class="border w-100 p-3"></div>
+                <div class="p-2"><button onclick="login(this)" class="w-100 border-0 rounded bg-primary text-white p-3 fw-bold">Log in</button></div>
+                <div class="text-center text-danger" id="error"></div>
+                <div class="p-2 text-center text-capitalize"><a href="forgetpassword.html" class="text-decoration-none fs-5 text-info">forget password?</a></div>
+                <hr>
+                <div class="p-2 text-center">
+                    <a href="signup.html" class="p-3 text-white d-block rounded w-100 text-decoration-none bg-success ps-5  pe-5">Create Account</a>
+                </div>
             </div>
         </div>
-    </header>
-    <section class="h2 container d-flex flex-wrap align-items-center " style="min-height: 400px;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
-        <div class="col-md-6 col-12">
-            <img src="asset/img/header-1.png" class="w-100" style="offset-anchor: -1;" alt="">
-        </div>
-        <div class="col-md-6 col-12 text-md-end text-center" style="font-size: 50px;">
-            <div style="font-size: x-large;color: brown;">Welcome to frontendplux</div>
-            Bring your idea to life <br> with our reponsive <br> web application developement
-            <div class="p-2 pe-0"><button class="btn ps-4 pe-4 p-2 text-light fs-4" style="background: brown;">Get started</button></div>
-        </div>
-    </section>
-    <div class="d-md-flex align-items-center pb-5 pt-5">
-        <section class="d-flex container flex-wrap rounded justify-content-between text-center pb-5" >
-            <div class="w-100 text-center h2 text-secondary p-3 pt-5 pb-3" style="font-size: 60px;"><span class="border-bottom border-4">About Us</span></div>
-            <a href="" class="p-3 pt-5 pb-5 text-decoration-none col-md-4 col-12">
-                <div><img src="asset/img/code.png" style="width:150px;" alt=""></div>
-                <div class="text-secondary">
-                    <h2>web developement</h2>
-                    <div>
-                        Responsive business website with contact form, SEO basics, and clean, modern UI design
-                    </div>
-                </div>
-            </a>
-            <a href="" class="p-3 pt-5 pb-5 text-decoration-none col-md-4 col-12">
-                <div><img src="asset/img/app.png" style="width: 150px;" alt=""></div>
-                <div class="text-secondary">
-                    <h2>software developement</h2>
-                    <div>streamlines tasks, enhances productivity, ensures data accuracy, and improves overall user experience.</div>
-                </div>
-            </a>
-            <a href="" class="p-3 pt-5 pb-5 text-decoration-none col-md-4 col-12">
-                <div><img src="asset/img/brand.png" style="width: 150px;" alt=""></div>
-                <div class="text-secondary">
-                    <h2>Brandin & logo review</h2>
-                    <div>Logo and branding build visual identity, boost recognition, and communicate your brand’s core values clearly</div>
-                </div>
-            </a>
-        </section>
     </div>
-    <section class="bg-warning">
-        <section class="m-3 p-3 w-100">
-            <div class="col-md-6">
-                <img src="" alt="">
-            </div>
-            <div class="col-md-6">
-                <h2>Contact us</h2>
-                <div>
-                    Partner with us to turn your ideas into reality. 
-                    Whether you're starting from scratch or enhancing an existing concept, our experienced team is here to guide you through every step of the process. We combine creativity, technical expertise, and a deep understanding of your goals to deliver custom solutions that are innovative, scalable, and designed for success. From initial planning to final delivery, we're 
-                    committed to quality, transparency, and collaboration. Let's build something great—together.
-                </div>
-            </div>
-        </section>
-    </section>
-    <footer class="bg-dark text-white">
-        <div class="container d-flex flex-wrap text-center p-2 text-md-start">
-            <section class="col-12 col-md-4 p-3">
-                <div><img src="asset/img/logo.png" style="width: 100px;" class="p-2" alt=""></div>
-                <h2 class="text-warning">frontendplux</h2>
-                <hr  class="border w-50 m-auto mb-2 mt-2 ms-md-0">
-                <div>we are best at what we do</div>
-            </section>
-            <section class="col-12 col-md-4 p-3">
-                <h2 class="text-white">useful Link</h2>
-                <div>
-                    <a href="" class="d-block text-decoration-none text-info p-2">Home</a>
-                    <a href="" class="d-block text-decoration-none text-info p-2">Contact Us</a>
-                    <a href="" class="d-block text-decoration-none text-info p-2">About Us</a>
-                </div>
-            </section>
-            <section class="col-12 col-md-4 p-3">
-                <h2 class="text-white">Contact Us</h2>
-                <div class="p-2 p-md-0"><b style="font-size: small;">phone: </b> <br> <a href="tel:+2349039570800" class="text-decoration-none text-info">+234 - 903 - 957 - 0800</a></div>
-                <div class="p-2 p-md-0"><b style="font-size: small;">Email: </b> <br> <a href="tel:+2349039570800" class="text-decoration-none text-info">Samuelsunday752@gmail.com</a></div>
-            </section>
-        </div>
-    </footer>
+    <script>
+       async function login(e){
+           e.innerHTML="<i class='spinner-border spinner-border-sm'></i> Loading...";
+           const email=document.getElementById('email');
+           const pass=document.getElementById('pass');
+           const error=document.getElementById('error');
+           error.innerHTML="";
+           if(email.value == "" || pass.value == ""){
+            error.innerHTML="Enter all field";
+           }
+           else{
+            const req=await fetch("localhost/config/login",{method:"post", body:JSON.stringify({email:email.value,pass:pass.value})}).then(res => res.json());
+             console.log(req);
+             if(req.status == 201){
+                window.location.href="dashboard";
+             }
+             else{
+                error.innerHTML=req.message;
+             }
+           }
+           e.innerHTML="Log in";
+        }
+    </script>
 </body>
 </html>

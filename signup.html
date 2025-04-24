@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/plugins/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/plugins/remixicon/remixicon.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body class="bg-light">
+    <div class="container d-md-flex justify-content-center">
+        <div class="col-md-6">
+            <div class="h1 p-2 text-primary text-center fw-bold text-capitalize mb-0" style="font-size: 40px;">facebook</div>
+            <div class="bg-white p-3 rounded m-auto w-100" style="max-width: 400px;">
+                <div class="h3 text-center mb-0">Create a new account</div>
+                <div class="text-secondary p-2  text-center">it's quick and easy</div>
+                <hr>
+                <div class="p-2 d-flex gap-2">
+                    <input type="text" placeholder="Firstname" class="border p-2 w-100">
+                    <input type="text" placeholder="Lastname" class="border p-2 w-100">
+                </div>
+                <div class="p-2">
+                    <div class="text-secondary">Date of birth <i class="ri-question-fill"></i></div>
+                    <div class="d-flex gap-2">
+                        <input type="number" class="border p-2 w-50" value="20">
+                        <input type="month" class="border p-2 w-100" value="01">
+                        <input type="number"  class="border p-2 w-75" value="2025"> 
+                    </div>
+                </div>
+                <div class="p-2">
+                    <div class="text-secondary">Gender <i class="ri-question-fill"></i></div>
+                    <div class="d-flex gap-2">
+                        <div class="border p-2 rounded w-100 d-flex align-items-center justify-content-between">Male <input type="radio" name="gender"></div>
+                        <div class="border p-2 rounded w-100 d-flex align-items-center justify-content-between">Female <input type="radio" name="gender"></div>
+                        <div class="border p-2 rounded w-100 d-flex align-items-center justify-content-between gap-2">Custom <input type="radio" name="gender"></div>
+                    </div>
+                </div>
+                <div class="p-2"><input type="text" id="email" class="border w-100 p-2" placeholder="Enter Phone number or Email Address"></div>
+                <div class="p-2"><input type="password" id="pass" placeholder="New Password" class="border w-100 p-2"></div>
+                <div class="p-2 text-secondary" style="font-size: small;">People who use our service may have uploaded your contact information to Facebook. <a href="" class="text-decoration-none text-info">Learn more</a>.</div>
+                <div class="p-2 text-secondary" style="font-size: small;">By clicking Sign Up, you agree to our <a href="" class="text-decoration-none text-info">Terms, Privacy Policy</a> and <a href="" class="text-decoration-none text-info">Cookies Policy</a>. You may receive SMS notifications from us and can opt out at any time.</div>
+                <div class="p-2"><button onclick="login(this)" class="w-100 border-0 rounded bg-success text-white p-3 fw-bold">Sign up</button></div>
+                <div class="text-center text-danger" id="error"></div>
+                <div class="p-2 text-center text-capitalize"><a href="index.html" class="text-decoration-none fs-5 text-primary">Already have an account?</a></div>
+            </div>
+        </div>
+    </div>
+    <script>
+       async function login(e){
+           e.innerHTML="<i class='spinner-border spinner-border-sm'></i> Loading...";
+           const email=document.getElementById('email');
+           const pass=document.getElementById('pass');
+           const error=document.getElementById('error');
+           error.innerHTML="";
+           if(email.value == "" || pass.value == ""){
+            error.innerHTML="Enter all field";
+           }
+           else{
+            const req=await fetch("localhost/config/login",{method:"post", body:JSON.stringify({email:email.value,pass:pass.value})}).then(res => res.json());
+             console.log(req);
+             if(req.status == 201){
+                window.location.href="dashboard";
+             }
+             else{
+                error.innerHTML=req.message;
+             }
+           }
+           e.innerHTML="Log in";
+        }
+    </script>
+</body>
+</html>
