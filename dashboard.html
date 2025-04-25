@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/plugins/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/plugins/remixicon/remixicon.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="asset/img/facebook.png">
+    <title>facebook.com</title>
+</head>
+<body class="bg-light">
+    <header class="d-flex  flex-wrap  position-fixed justify-content-between top-0 start-0 end-0 align-items-center fs-3 bg-white p-2 pt-1 pb-0" style="z-index: 3;">
+        <div class="d-flex gap-2 align-items-center p-1">
+            <div><img src="asset/img/facebook.png" width="50px" height="50px" alt=""></div>
+            <a href="" class="d-md-none"><i class="ri-search-line p-2 rounded-circle btn btn-light fs-3 pt-0 pb-0"></i></a>
+            <div class="position-relative fs-6 d-md-block d-none">
+                <input type="search" placeholder="Search Facebook" class="w-100 p-2 ps-5 bg-light rounded-pill border-0">
+                <i class="ri-search-line m-2 p-1 pt-0 ms-3 text-secondaryfs-4 position-absolute start-0"></i>
+            </div>
+        </div>
+        <div class="d-none d-md-block header-hover-active align-items-center ">
+            <a href="" class="ri-home-4-fill p-5 text-primary fs-3 border-bottom pb-3 border-primary border-3"></a>
+            <a href="" class="ri-play-circle-line  text-secondary inactive fs-3"></a>
+            <a href="" class="ri-store-2-line text-secondary inactive fs-3"></a>
+            <a href="" class="ri-group-2-line text-secondary inactive fs-3"></a>
+            <a href="" class="ri-gamepad-line text-secondary inactive fs-3"></a>
+        </div>
+        <div class="d-flex gap-2 align-items-center p-1">
+            <a href=""><i class="ri-grid-fill p-2 rounded-circle btn btn-light fs-3 pt-0 pb-0"></i></a>
+            <a href=""><i class="ri-messenger-fill p-2 rounded-circle btn btn-light fs-3 pt-0 pb-0"></i></a>
+            <a href=""><i class="ri-notification-2-fill p-2 rounded-circle btn btn-light fs-3 pt-0 pb-0"></i></a>
+            <a href=""><img src="asset/profile/mercy.jpg" class="rounded-circle"  style="width: 50px;height:50px" alt=""></a>
+        </div>
+        <div class="d-flex d-md-none align-items-center text-center w-100 border-top pt-2 fs-2">
+            <a href="" class="w-100 ri-home-4-fill text-primary border-bottom border-primary border-3"></a>
+            <a href="" class="w-100 ri-play-circle-line  text-secondary inactive"></a>
+            <a href="" class="w-100 ri-store-2-line text-secondary inactive"></a>
+            <a href="" class="w-100 ri-group-2-line text-secondary inactive"></a>
+            <a href="" class="w-100 ri-gamepad-line text-secondary inactive"></a>
+        </div>
+    </header>
+    <div class="d-md-flex w-100 h-100 overflow-auto  m-auto justify-content-end header-padding" id="bodey" style="max-width: 1500px;transform: translate(0,0);">
+        <div class="col-md-3 p-2 d-md-block d-none start-0 position-sticky top-0 h-100 scroller" id="Sidebar_1">
+            <a href="" class="d-block inactive text-decoration-none text-dark d-flex gap-2 align-items-center p-2"><img src="asset/profile/mercy.jpg" class="rounded-circle"  style="width: 30px;height:30px" alt=""> <span style="font-weight: 500;">Marketplace</span></a>
+            <a href="" class="d-block text-decoration-none inactive text-dark d-flex gap-2 align-items-center p-2"><img src="asset/img/ads-1.png" class="rounded-circle"  style="width: 30px;height:30px" alt=""> <span style="font-weight: 500;">Ads Manager</span></a>
+            <a href="" class="d-block text-decoration-none inactive text-dark d-flex gap-2 align-items-center p-2"><img src="asset/img/bullhorn.png" class="rounded-circle"  style="width: 30px;height:30px" alt=""> <span style="font-weight: 500;">Ad center</span></a>
+            <a href="" class="d-block text-decoration-none inactive text-dark d-flex gap-2 align-items-center p-2"><img src="asset/img/professional-1.png" class="rounded-circle"  style="width: 30px;height:30px" alt=""> <span style="font-weight: 500;">Professional dashboard</span></a>
+            <hr class="border mb-0">
+            <div class="h5 p-2">Suggestion</div>
+            <a href="" class="d-block text-decoration-none inactive text-dark p-2"><img src="asset/img/meta-1.png" class="rounded-circle"  style="width: 30px;height:30px" alt=""> <span style="font-weight: 500;">Meta ai</span></a>
+            <a href="" class="d-block text-decoration-none inactive text-dark p-2 d-flex align-items-center gap-2"><i class="ri-user-community-fill text-primary fs-4"></i> <span style="font-weight: 500;">Friends</span></a>
+            <a href="" class="d-block text-decoration-none inactive text-dark p-2 d-flex align-items-center gap-2"><i class="ri-history-line fs-4 text-primary"></i> <span style="font-weight: 500;">Memories</span></a>
+            <a href="" class="d-block text-decoration-none inactive text-dark p-2 d-flex align-items-center gap-2"><img src="asset/img/feeds.png" class="rounded-circle"  style="width: 30px;height:30px" alt=""> <span style="font-weight: 500;">Feeds</span></a>
+            <a href="" class="d-block text-decoration-none inactive text-dark p-2 d-flex align-items-center gap-2"><i class="ri-group-2-fill fs-4 text-primary"></i> <span style="font-weight: 500;">Groups</span></a>
+            <a href="" class="d-block text-decoration-none inactive text-dark p-2 d-flex align-items-center gap-2"><i class="ri-store-2-fill fs-4 text-primary"></i> <span style="font-weight: 500;">Marketplace</span></a>
+            <!-- <div class="dropdown">
+                <a href="javascript:;" 
+                   class="d-block text-decoration-none inactive text-dark p-2 d-flex align-items-center gap-2 dropdown-toggle" 
+                   id="dropdownMenuButton" 
+                   data-bs-toggle="dropdown" 
+                   aria-expanded="false">
+                  <i class="p-2 rounded-circle" style="background: whitesmoke;">🔽</i> 
+                  <span style="font-weight: 500;">See more</span>
+                </a>
+            
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>               -->
+            <hr class="border">
+            <div class="h5">Your shortcuts</div>
+            <a href="" class="d-block text-decoration-none inactive text-dark p-2"><img src="asset/profile/mercy.jpg" class="rounded-circle"  style="width: 30px;height:30px" alt=""> <span style="font-weight: 500;">See more</span></a>
+            <div>
+                <a href="" class="text-secondary text-decoration-none">Privacy</a>  · <a href="" class="text-secondary text-decoration-none">Terms</a>  · <a href="" class="text-secondary text-decoration-none">Advertising</a>  · <a href="" class="text-secondary text-decoration-none">Ad Choices</a> 
+                 · <a href="" class="text-secondary text-decoration-none">Cookies</a>  ·  More · Meta &copy; 2025
+            </div>
+        </div>
+        <div class="col-md-6 mt-md-2" id="Sidebar_1">
+            <div style="max-width: 500px;margin: auto;padding-bottom: 100px;">
+                <div class="p-2">
+                    <div class="bg-white p-2 rounded">
+                        <div class="d-flex gap-3 align-items-center">
+                            <img src="asset/profile/mercy.jpg" class="rounded-circle"  style="width: 50px;height:50px" alt="">
+                            <input type="button" value="What's is on your mind?" class="p-2 w-100 border-0 rounded-pill text-start">
+                        </div>
+                        <hr class="border">
+                        <div class="d-flex text-center justify-content-between align-items-center overflow-auto">
+                            <a href="" class="text-decoration-none text-dark d-flex align-items-center ps-3 pe-3 p-0 inactive rounded"><i class="ri-live-fill text-danger fs-3"></i>&nbsp;<span>Live&nbsp;Video</span></a>
+                            <a href="" class="text-decoration-none text-dark p-2 d-flex align-items-center ps-3 pe-3 inactive p-2"><img src="asset/img/image.png" style="width: 25px;" alt="">&nbsp;<span>Images&nbsp;/&nbsp;Photos</span></a>
+                            <a href="" class="text-decoration-none text-dark p-2 d-flex align-items-center ps-3 pe-3 inactive p-2"><img src="asset/img/reel.png" style="width: 30px;" alt=""> <span>Reel</span></a>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="swiper mySwiper m-2 rounded bg-white p-2 ps-0">
+                    <div class="swiper-wrapper ">
+                        <a href="" class="overflow-hidden swiper-slide  rounded border start-0 ms-2 bg-white  text-decoration-none">
+                            <img src="asset/profile/mercy.jpg" style="width: 100%;height: 160px;object-fit: cover; object-position: center;" alt="">
+                            <div style="margin-top: -35px;font-size: 45px;" class="text-center"><i class="ri-add-circle-fill bg-white rounded-circle" style="padding: 3px;"></i></div>
+                            <div class="text-center text-dark p-2 pb-3 pt-0" style="font-weight: 600;">Create Story</div>
+                        </a>
+                        <a href="" style="height: 231px; background-image: linear-gradient(#00000077,#00000077),url(asset/profile/mercy.jpg);background-repeat: no-repeat;background-position: center; background-size: cover;" class="overflow-hidden swiper-slide text-light rounded position-relative bg-white  text-decoration-none">
+                            <div class="position-absolute top-0 m-3"><img src="asset/profile/mercy.jpg" class="rounded-circle border-primary border border-3"  style="width: 40px;height:40px" alt=""></div>
+                            <div class="text-center text-capitalize p-2 pb-3 pt-0 position-absolute bottom-0 start-0 end-0" style="font-weight: 600;">odido ifeoma</div>
+                        </a>
+                        <a href="" style="height: 231px; background-image: linear-gradient(#00000075,#000000a2),url(asset/profile/mercy.jpg);background-repeat: no-repeat;background-position: center; background-size: cover;" class="overflow-hidden swiper-slide text-white rounded position-relative bg-white  text-decoration-none">
+                            <div class="position-absolute top-0 m-3"><img src="asset/profile/mercy.jpg" class="rounded-circle border-primary border border-3"  style="width: 40px;height:40px" alt=""></div>
+                            <div class="text-center text-capitalize p-2 pb-3 pt-0 position-absolute bottom-0 start-0 end-0" style="font-weight: 600;">odido ifeoma</div>
+                        </a>
+                        <a href="" style="height: 231px; background-image: linear-gradient(#000000a2,#0000006c),url(asset/profile/mercy.jpg);background-repeat: no-repeat;background-position: center; background-size: cover;" class="overflow-hidden swiper-slide text-white rounded position-relative bg-white  text-decoration-none">
+                            <div class="position-absolute top-0 m-3"><img src="asset/profile/mercy.jpg" class="rounded-circle border-primary border border-3"  style="width: 40px;height:40px" alt=""></div>
+                            <div class="text-center text-capitalize p-2 pb-3 pt-0 position-absolute bottom-0 start-0 end-0" style="font-weight: 600;">odido ifeoma</div>
+                        </a>
+                    </div>
+                    <div class="swiper-button-next btn btn-light btn-sm rounded-pill p-1 ps-3 pe-3 fs-3"><i class="ri-arrow-right-s-line"></i></div>
+                    <div class="swiper-button-prev  btn btn-light btn-sm rounded-pill p-1 ps-3 pe-3 fs-3"><i class="ri-arrow-left-s-line"></i></div>
+                </div>
+                <!--  -->
+                <div class="m-2 bg-white rounded">
+                    <div class="d-flex justify-content-between p-2">
+                        <div class="d-flex gap-2">
+                            <img src="asset/profile/mercy.jpg" class="rounded-circle border"  style="width: 50px;height:50px" alt="">
+                            <div>
+                                <div><strong class="text-capitalize">Educated Minds</strong> <a href="" class="text-decoration-none">. Follow</a></div>
+                                <div class="">April 18 at 12:00pm . <i class="ri-globe-fill"></i></div>
+                            </div>
+                        </div>
+                        <div class="fs-1">
+                            <a href="" class="text-decoration-none ri-more-line text-dark"></a>
+                            <a href="" class="text-decoration-none ri-close-fill text-dark"></a>
+                        </div>
+                    </div>
+                    <div class="text-secondary p-2 pt-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi  enim, cum animi totam suscipit?</div>
+                    <div><img src="asset/profile/post.jpg" class="w-100" alt=""></div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="p-2 fs-6"><i class="ri-thumb-up-line"></i> <span>200k</span>. <span class="text-primary">likes</span></div>
+                    </div>
+                    <hr class="m-1 border">
+                    <div class="d-flex pb-2 pt-2  justify-content-between text-center fs-5" style="font-weight: 600;">
+                        <a href="" class="p-2 rounded inactive w-100 text-decoration-none text-secondary"><i class="ri-thumb-up-line"></i>&nbsp;<span>Like</span></a>
+                        <a href="" class="p-2 rounded inactive w-100 text-decoration-none text-secondary"><i class="ri-chat-4-line"></i>&nbsp;<span>Comment</span></a>
+                        <a href="" class="p-2 rounded inactive w-100 text-decoration-none text-secondary"><i class="ri-share-forward-line"></i>&nbsp;<span>Share</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 d-none d-md-block position-sticky top-0 h-100 scroller">
+            <div class="h5 text-secondary p-2">Sponsored</div>
+            <div>
+                <div class="d-flex gap-3 p-2 inactive">
+                    <div>
+                        <img src="asset/profile/post.jpg" class="rounded" style="width:110px;height: 110px;object-fit: cover;object-position: center;" alt="">
+                    </div>
+                    <div>
+                        <div><strong>shop now for N150,000.00 only. nationwide delivery</strong></div>
+                        <div class="text-secondary">shegze.com</div>
+                    </div>
+                </div>
+                <div class="d-flex gap-3 p-2 inactive">
+                    <div>
+                        <img src="asset/profile/post.jpg" class="rounded" style="width:110px;height: 110px;object-fit: cover;object-position: center;" alt="">
+                    </div>
+                    <div>
+                        <div><strong>shop now for N150,000.00 only. nationwide delivery</strong></div>
+                        <div class="text-secondary">shegze.com</div>
+                    </div>
+                </div>
+            </div>
+            <hr class="border">
+            <div class="h5 text-secondary p-2">Birthday</div>
+            <div>
+                <div class="d-flex gap-3 p-2 inactive">
+                    <div>
+                        <i class="ri-gift-fill text-danger fs-1"></i>
+                    </div>
+                    <div>
+                        <div><strong>Young Jonah and 7 others have birthday today</strong></div>
+                    </div>
+                </div>
+            </div>
+            <hr class="border">
+            <div class="h5 text-secondary p-2">Contacts</div>
+            <div>
+                <div class="d-flex gap-3 p-2 align-items-center inactive">
+                    <div>
+                        <img src="asset/profile/mercy.jpg" class="rounded-circle border"  style="width: 50px;height:50px" alt="">
+                    </div>
+                    <div>
+                        <div><strong>mercy young</strong></div>
+                    </div>
+                </div>
+            </div>
+            <hr class="border">
+            <div class="h5 text-secondary p-2">Groups</div>
+            <div>
+                <div class="d-flex gap-3 p-2 align-items-center inactive">
+                    <div>
+                        <img src="asset/profile/mercy.jpg" class="rounded-circle border"  style="width: 50px;height:50px" alt="">
+                    </div>
+                    <div>
+                        <div><strong>mercy young</strong></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+
+    document.querySelector('#bodey').onscroll = () => {
+            var sidebar = document.getElementById('Sidebar_1');
+            if (document.querySelector('#bodey').scrollY >= 200) {
+                sidebar.style.position="fixed";
+            }
+            else{
+                sidebar.style.position="relative";
+            }
+        };
+    </script>
+    <script>
+        const leftSidebar = document.querySelector('.col-md-3');
+      
+        leftSidebar.addEventListener('wheel', function (e) {
+          e.preventDefault();
+        }, { passive: false });
+      </script>
+      
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2.2,
+        spaceBetween: 10,
+        slidesOffsetAfter: 150,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      });
+    </script>
+</body>
+</html>
